@@ -1,0 +1,32 @@
+{% set version = "2.3.0" %}
+
+package:
+    name: ttkthemes
+    version: {{ version }}
+
+source:
+    git_url: https://github.com/RedFantom/ttkthemes
+    git_rev: {{ version }}
+
+build:
+    number: 0
+    noarch_python: True
+
+requirements:
+    build:
+        - python
+        - pillow
+        - setuptools
+
+    run:
+        - python
+        - pillow
+
+test:
+    imports:
+        - ttkthemes
+
+about:
+    description: A group of themes for the ttk extenstions for Tkinter
+    home: https://ttkthemes.readthedocs.io/en/latest/index.html
+    license: GNU GPLv3

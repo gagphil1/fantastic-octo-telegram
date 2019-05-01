@@ -1,0 +1,32 @@
+{% set version = "0.10.0" %}
+
+package:
+    name: ttkwidgets
+    version: {{ version }}
+
+source:
+    git_url: https://github.com/RedFantom/ttkwidgets
+    git_rev: {{ version }}
+
+build:
+    number: 0
+    noarch_python: True
+
+requirements:
+    build:
+        - python
+        - setuptools
+        - pillow
+
+    run:
+        - python
+        - pillow
+
+test:
+    imports:
+        - ttkwidgets
+
+about:
+    description: A collection of widgets for Tkinter's ttk extensions by various authors.
+    home: https://ttkwidgets.readthedocs.io/en/latest/
+    license: GNU GPLv3
