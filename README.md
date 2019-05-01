@@ -1,2 +1,3 @@
-# fantastic-octo-telegram
-Conda recipes for some Python packages
+# python_condabuilds
+Conda recipes for some Python packages.
+
