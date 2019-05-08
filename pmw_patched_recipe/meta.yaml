@@ -1,0 +1,30 @@
+{% set version = "master" %}
+
+package:
+    name: pmw_patched
+    version: {{ version }}
+
+source:
+    git_url: https://github.com/schrodinger/pmw-patched.git
+#    git_rev: {{ version }}
+
+build:
+    number: 0
+    noarch_python: True
+
+requirements:
+    build:
+        - python
+        - setuptools
+
+    run:
+        - python
+        - tk
+test:
+    imports:
+        - Pmw
+
+about:
+    description: Fork of Python megawidgets with essential patches applied.
+    home: https://github.com/schrodinger/pmw-patched
+    license: MIT
