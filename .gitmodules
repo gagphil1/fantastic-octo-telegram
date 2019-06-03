@@ -1,0 +1,3 @@
+[submodule "tk-feedstock"]
+	path = tk-feedstock
+	url = https://github.com/gagphil1/tk-feedstock.git
