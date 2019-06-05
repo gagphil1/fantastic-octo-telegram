@@ -17,10 +17,12 @@ requirements:
         - python
         - tk
         - cmake
+        - vc 14            # [win64]
 
     run:
         - python
         - tk
+        - vs2015_runtime   # [win64]
 #test:
 #    imports:
 #        - Pmw
