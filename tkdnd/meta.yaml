@@ -20,9 +20,9 @@ requirements:
         - vc 14            # [win64]
 
     run:
-        - python 3.7
         - tk 8.6.*
         - vs2015_runtime   # [win64]
+
 #test:
 #    imports:
 #        - Pmw
