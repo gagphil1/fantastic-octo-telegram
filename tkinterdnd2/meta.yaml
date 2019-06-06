@@ -1,0 +1,35 @@
+{% set version = "0.3.0" %}
+
+package:
+    name: tkinterdnd2
+    version: {{ version }}
+
+source:
+  - url: https://sourceforge.net/projects/tkinterdnd/files/TkinterDnD2/TkinterDnD2-0.3.zip
+    sha1: d8609c2f5271ab9eda196e4c221cf26feadcf4eb
+  - path: ./setup.py
+
+build:
+    number: 0
+    script: python setup.py install --single-version-externally-managed --record=record.txt
+    noarch: python
+
+requirements:
+    build:
+        - python 3.*
+        - tk 8.6.*
+        - tkdnd >2.9
+        - setuptools
+
+#    run:
+#        - tk 8.6.*
+#        - vs2015_runtime   # [win64]
+
+#test:
+#    imports:
+#        - Pmw
+
+about:
+    description: TkinterDnD2 is a python wrapper for George Petasis' tkDnD Tk extension version 2
+    home: http://tkinterdnd.sourceforge.net/
+    license: public domain
