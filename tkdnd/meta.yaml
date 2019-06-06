@@ -14,14 +14,14 @@ build:
 requirements:
     build:
         #- {{ compiler('c') }}
-        - python
-        - tk
+        - python 3.7
+        - tk 8.6.*
         - cmake
         - vc 14            # [win64]
 
     run:
-        - python
-        - tk
+        - python 3.7
+        - tk 8.6.*
         - vs2015_runtime   # [win64]
 #test:
 #    imports:
