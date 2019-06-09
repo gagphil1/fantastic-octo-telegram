@@ -37,4 +37,7 @@ cmake -G "Unix Makefiles" \
     -D CMAKE_INSTALL_PREFIX=${BUILD_PREFIX}/lib \
     -D CMAKE_BUILD_TYPE=Release ../..
 make install
-cd ..
+cd ../..
+
+cp -R demos $PREFIX/lib/$PKG_NAME$PKG_VERSION
+cp -R doc $PREFIX/lib/$PKG_NAME$PKG_VERSION
