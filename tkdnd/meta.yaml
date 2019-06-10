@@ -13,7 +13,7 @@ build:
 
 requirements:
     build:
-      - tk >=8.6.9
+      - tk >=8.6
       - cmake
       - vc 14            # [win64]
 
