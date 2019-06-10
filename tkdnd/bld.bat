@@ -5,5 +5,5 @@ nmake "TCL=%BUILD_PREFIX%\library" TCL_VERSION=8.6 TCL_VERSION_NO_DOTS=86 MACHIN
 nmake install "TCL=%PREFIX%\library" TCL_VERSION=8.6 TCL_VERSION_NO_DOTS=86 MACHINE=AMD64
 
 cd ..
-copy -R demos $PREFIX/lib/$PKG_NAME$PKG_VERSION
-copy -R doc $PREFIX/lib/$PKG_NAME$PKG_VERSION
+copy demos %PREFIX%\library\lib\tkdnd2.9
+copy doc %PREFIX%\library\lib\tkdnd2.9
