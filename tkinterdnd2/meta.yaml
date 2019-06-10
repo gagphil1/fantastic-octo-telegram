@@ -17,18 +17,13 @@ build:
 requirements:
   build:
     - python
-#      - tk
-    - tkdnd >=2.9
     - setuptools
 
   run:
     - tkdnd >=2.9
 
-#test:
-#    imports:
-#        - Pmw
-
 about:
+  summary: 'TkinterDnD2 is a python wrapper for George Petasis'' tkDnD Tk extension version 2'
   description: TkinterDnD2 is a python wrapper for George Petasis' tkDnD Tk extension version 2
   home: http://tkinterdnd.sourceforge.net/
   license: public domain

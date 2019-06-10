@@ -3,15 +3,19 @@ import shutil
 import os
 
 os.mkdir('demo')
-open('demo/__init__.py', 'a').close()
 shutil.copy("demo_canvas.py", "demo")
 shutil.copy("demo_files_and_text.py","demo")
 shutil.copy("demo_megawidgets.py", "demo")
 shutil.copy("demo_simple_text.py", "demo")
+
+f = open('demo/__init__.py', 'a')
+print("from demo import *", file=f)
+f.close()
+
 shutil.move('demo', 'TkinterDnD2')
 
 setup(
-    name='tkinterdnd2',
+    name='TkinterDnD2',
     version='0.3.0',
     url='http://tkinterdnd.sourceforge.net',
     author='klappnase',
