@@ -9,20 +9,20 @@ source:
     git_rev: tkdnd-release-test-v{{ version }}
 
 build:
-    number: 0
+    number: 1
 
 requirements:
     build:
-        #- {{ compiler('c') }}
-        - tk 8.6.*
-        - cmake
-        - vc 14            # [win64]
+      - tk >=8.6.9
+      - cmake
+      - vc 14            # [win64]
 
     run:
-        - tk 8.6.*
-        - vs2015_runtime   # [win64]
+      - tk
+      - vs2015_runtime   # [win64]
 
 about:
-    description: TkDND is an extension that adds native drag & drop capabilities to the Tk toolkit
-    home: https://sourceforge.net/projects/tkdnd/
-    license: MIT
+  summary: 'TkDND is an extension that adds native drag & drop capabilities to the Tk toolkit'
+  description: TkDND is an extension that adds native drag & drop capabilities to the Tk toolkit
+  home: https://github.com/petasis/tkdnd
+  license: MIT
