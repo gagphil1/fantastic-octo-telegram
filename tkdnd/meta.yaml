@@ -13,12 +13,12 @@ build:
 
 requirements:
     build:
-      - tk >=8.6
+      - tk 8.6.8
       - cmake
       - vc 14            # [win64]
 
     run:
-      - tk
+      - tk 8.6.*
       - vs2015_runtime   # [win64]
 
 about:
