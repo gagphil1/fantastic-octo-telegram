@@ -9,5 +9,5 @@ rem nmake install "TCL=%PREFIX%\library"  MACHINE=AMD64
 cd ..
 copy demos %PREFIX%\library\lib\tkdnd2.9
 copy doc %PREFIX%\library\lib\tkdnd2.9
-mkdir %PREFIX%\tcl\tkdnd2.9
-move %PREFIX%\library\lib\tkdnd2.9\* %PREFIX%\tcl\tkdnd2.9
+mkdir %PREFIX%\tcl\tk8.6\tkdnd2.9
+move %PREFIX%\library\lib\tkdnd2.9\* %PREFIX%\tcl\tk8.6\tkdnd2.9

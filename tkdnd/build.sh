@@ -34,10 +34,10 @@ cmake -G "Unix Makefiles" \
     -D TK_INCLUDE_PATH=${BUILD_PREFIX}/include \
     -D TK_STUB_LIBRARY=${BUILD_PREFIX}/lib/libtkstub8.6.a \
     -D TK_LIBRARY=${BUILD_PREFIX}/lib \
-    -D CMAKE_INSTALL_PREFIX=${BUILD_PREFIX}/lib \
+    -D CMAKE_INSTALL_PREFIX=${BUILD_PREFIX}/tcl/tk8.6 \
     -D CMAKE_BUILD_TYPE=Release ../..
 make install
 cd ../..
 
-cp -R demos $PREFIX/lib/$PKG_NAME$PKG_VERSION
-cp -R doc $PREFIX/lib/$PKG_NAME$PKG_VERSION
+cp -R demos ${BUILD_PREFIX}/tcl/tk8.6/$PKG_NAME$PKG_VERSION
+cp -R doc ${BUILD_PREFIX}/tcl/tk8.6/$PKG_NAME$PKG_VERSION
