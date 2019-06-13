@@ -16,6 +16,13 @@ requirements:
       - tk 8.6.8
       - cmake
       - vc 14            # [win64]
+      # - {{ compiler('c') }}                # [linux]
+      # - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
+      # - {{ cdt('libx11-devel') }}          # [linux]
+      # - {{ cdt('libxcb') }}                # [linux]
+      # - {{ cdt('libxau') }}                # [linux]
+      # - {{ cdt('libxext') }}                # [linux]
+
 
     run:
       - tk 8.6.*
